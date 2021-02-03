@@ -3,4 +3,12 @@
     <string name="app_name">Android Labs</string>
     <string name="hello_message"> Здорово!</string>
     <string name="ButtonText"> Жми </string>
+    <string name="button">еще одна</string>
+    <string name="checkBox">чекбокс</string>
+    <string name="click">Нажать</string>
+    <string name="look_at">Посмотрите на ГИ</string>
+    <string name="toast_massage">больше информации</string>
+    <string name="switch_on_off">вкл/выкл</string>
+    <string name="text_here">текст тут</string>
+    <string name="toast_message">больше информации</string>
 </resources>
