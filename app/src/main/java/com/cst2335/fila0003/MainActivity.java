@@ -10,7 +10,7 @@ import android.widget.CompoundButton;
 import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
-
+///////
 public class MainActivity extends AppCompatActivity {
     private Button button;
     private CheckBox checkButton;
