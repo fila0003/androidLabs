@@ -12,7 +12,7 @@
         android:id="@+id/look_at"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter your email address"
+        android:text="@string/look_at"
         android:textSize="20dp" />
 
 
@@ -21,12 +21,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:hint="Type email address"/>
+        android:hint="@string/editText1"/>
     <TextView
         android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Type your password"
+        android:text="@string/password"
         android:textSize="20dp"/>
 
     <EditText
@@ -36,6 +36,7 @@
         android:inputType="textPassword"
         />
     <Button
+        android:id="@+id/Login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"

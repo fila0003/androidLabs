@@ -6,9 +6,18 @@
     <string name="button">Ещё одна</string>
     <string name="checkBox">ЧекБокс</string>
     <string name="click">Нажать</string>
-    <string name="look_at">посмотрите на ГИ</string>
+    <string name="look_at">Введите свой емайл</string>
     <string name="toast_massage">больше информации</string>
     <string name="switch_on_off">вкл/выкл</string>
     <string name="text_here">текст тут</string>
     <string name="toast_message">больше информации</string>
+    <string name="editText1">печатать здесь</string>
+    <string name="password">пароль</string>
+    <string name="textView2">ваш профиль</string>
+    <string name="Login">логин</string>
+    <string name="textView3">ввести пароль</string>
+    <string name="textView4">введите имя</string>
+    <string name="textView5">Ваш емайл</string>
+    <string name="textView7">Ваше фото</string>
+    <string name="textView9">нажмите- вылетит птичка!</string>
 </resources>

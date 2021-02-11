@@ -6,8 +6,19 @@
     <string name="checkBox">Check this out!</string>
     <string name="click">Click here</string>
     <string name="toast_massage">Her is more information</string>
-    <string name="look_at">Look at my GUI:</string>
     <string name="switch_on_off">Switch on/off</string>
     <string name="text_here">Text here</string>
     <string name="toast_message">Here is  more information</string>
+    <string name="look_at">Enter your email address</string>
+    <string name="editText1">Type email address</string>
+    <string name="password">Type your password</string>
+    <string name="textView2">Your profile</string>
+    <string name="Login">Login</string>
+    <string name="textView3">type password</string>
+    <string name="textView4">Enter your name</string>
+    <string name="textView5">Your email</string>
+    <string name="textView7">Your picture:</string>
+    <string name="textView9">Click the button above to take a picture</string>
+
+
 </resources>
