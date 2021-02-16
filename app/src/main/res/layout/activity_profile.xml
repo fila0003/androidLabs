@@ -60,5 +60,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/textView9" />
+
+        <Button
+            android:id="@+id/goToChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/goToChat" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

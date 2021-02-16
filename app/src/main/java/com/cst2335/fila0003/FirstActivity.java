@@ -13,19 +13,29 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class FirstActivity extends AppCompatActivity {
-    SharedPreferences prefs;
+    SharedPreferences prefs = null;
     EditText textEmail;
     EditText textPassword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        prefs = getSharedPreferences("mySettings", Context.MODE_PRIVATE);
+
         //your programm start here
         super.onCreate(savedInstanceState);
         //setContentView loads obj onto the screen
         setContentView(R.layout.activity_main_linear);
+
+        prefs = getSharedPreferences("mySettings", Context.MODE_PRIVATE);
+
         textEmail = findViewById(R.id.editText1);
         textEmail.setText(prefs.getString("email", null));
         textPassword = findViewById(R.id.editText2);
+
+        /*String savedString =prefs.getString("ReserveName", "Default Value");
+        EditText typeField = findViewById(R.id.inputButton);
+        typeField.setText(savedString);
+         Button saveButton = (Button)findViewById(R.id.saveButton);
+         saveButton.setOnClickListener(bt ->
+         saveSharedPrefs(typeField.getText().toString()));*/
     }
 
 
@@ -42,9 +52,17 @@ public class FirstActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+       /* SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("email", String.valueOf(textEmail.getText()));
+        editor.putString("password", String.valueOf(textPassword.getText()));
+        editor.commit();*/
+    }
+
+    private  void  saveSharedPrefs(String stringToSave) {
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString("email", String.valueOf(textEmail.getText()));
         editor.putString("password", String.valueOf(textPassword.getText()));
+        editor.commit();
     }
 
     public void onLogin(View view) {

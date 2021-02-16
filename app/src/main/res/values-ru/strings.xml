@@ -20,4 +20,9 @@
     <string name="textView5">Ваш емайл</string>
     <string name="textView7">Ваше фото</string>
     <string name="textView9">нажмите- вылетит птичка!</string>
+    <string name="goToChat">Чат</string>
+    <string name="Title">Удалить?</string>
+    <string name="receiveButtonText">получить</string>
+    <string name="typeHere">печатать здесь</string>
+    <string name="sendButtonText">получить</string>
 </resources>
