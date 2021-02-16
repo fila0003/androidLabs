@@ -7,7 +7,7 @@
 <View
     android:layout_width="0dp"
     android:layout_height="0dp"
-    android:layout_weight="1" /> <!-- this View for the perfect layout !-->
+    android:layout_weight="1" />
 
 <TextView
     android:layout_height="wrap_content"
@@ -18,6 +18,6 @@
 <ImageView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:src="@drawable/row_receive"
+    android:src="@drawable/man3"
     />
 </LinearLayout>

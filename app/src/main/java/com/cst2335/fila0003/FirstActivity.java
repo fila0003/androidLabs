@@ -16,12 +16,14 @@ public class FirstActivity extends AppCompatActivity {
     SharedPreferences prefs = null;
     EditText textEmail;
     EditText textPassword;
+    public static final String ACTIVITY_NAME = "MAIN_ACTIVITY";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        //your programm start here
+        // programm start here
         super.onCreate(savedInstanceState);
         //setContentView loads obj onto the screen
+        //String savedString = prefs.getString("ReserveEmail", "");
         setContentView(R.layout.activity_main_linear);
 
         prefs = getSharedPreferences("mySettings", Context.MODE_PRIVATE);

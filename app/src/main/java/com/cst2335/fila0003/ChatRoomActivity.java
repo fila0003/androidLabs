@@ -66,7 +66,6 @@ public class ChatRoomActivity extends AppCompatActivity {
             Message message = new Message(typeHere.getEditableText().toString(), Type.SEND);
             elements.add(message);
             typeHere.getEditableText().clear(); // will clean the text in the "Type here" field
-
             myAdapter.notifyDataSetChanged(); // this line is updating screen without it items will be added to elements, but nothing will be changed on screen
 
         });
@@ -92,7 +91,8 @@ public class ChatRoomActivity extends AppCompatActivity {
                         myAdapter.notifyDataSetChanged();
                     }).setNegativeButton("NO", (click, arg) -> {})
 
-                    .setView(getLayoutInflater().inflate(R.layout.dialog_layout, null)).create().show();
+                    .setView(getLayoutInflater().inflate(R.layout.dialog_layout, null))
+                    .create().show();
             return true;
         });
     }
@@ -101,15 +101,15 @@ public class ChatRoomActivity extends AppCompatActivity {
 
         public int getCount() { return elements.size();}
 
-        public Object getItem(int position) { return elements.get(position); }
-//        public Object getItem(int position) { return elements.get(position) + position; }
+       public Object getItem(int position) { return elements.get(position); }
+      //public Object getItem(int position) { return elements.get(position) + position; }
 
         public long getItemId(int position) { return (long) position; }
 
         public View getView(int position, View old, ViewGroup parent) // getView() will be called by myAdapter.notifyDataSetChanged();
         {
             LayoutInflater inflater = getLayoutInflater();
-            View newView;
+            View newView = old;
 
           Message m = elements.get(position);
             if (m.getType()== Type.SEND) {
@@ -119,15 +119,14 @@ public class ChatRoomActivity extends AppCompatActivity {
                 //set what the text should be for this row:
                 TextView tView = newView.findViewById(R.id.textGoesHere);
                 tView.setText(m.getText());
-                return newView;
             } else {
                 newView = inflater.inflate(R.layout.receive_layout, parent, false);
 
                 //set what the text should be for this row:
                 TextView tView = newView.findViewById(R.id.textGoesHere);
                 tView.setText(m.getText());
-                return newView;
             }
+            return newView;
         }
     }
 
