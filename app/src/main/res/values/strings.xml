@@ -19,7 +19,7 @@
     <string name="textView5">Your email</string>
     <string name="textView7">Your picture:</string>
     <string name="textView9">Click the button above to take a picture</string>
-    <string name="receiveButtonText" >RECEIVE</string>
+    <string name="receiveButtonText">RECEIVE</string>
     <string name="typeHere">Type here</string>
     <string name="sendButtonText">send</string>
     <string name="goToChat">Go to chat</string>
